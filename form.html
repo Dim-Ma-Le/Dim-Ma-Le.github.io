@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>OWC Umfrage</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="icon" href="pcs/icon.png" type="image/icon_type">
+    </head>
+
+    <body>
+        <img src="https://i.ppy.sh/c654ce3b0a9aa87b1da2526a46141cf723c47935/68747470733a2f2f6f73752e7070792e73682f77696b692f696d616765732f546f75726e616d656e74732f4f57432f323032332f696d672f6f7763323032332d62616e6e65722e6a7067" alt="OWC Logo" class="OWC_LOGO_Banner">
+        <nav>
+            <ul>
+                <li><a href="index.html#OWC">about OWC</a></li>
+                <li><a href="index.html#Players">Players MVPS</a></li>
+                <li><a href="https://osu.ppy.sh/wiki/en/Tournaments/OWC/2023">OWC 2023 Hauptseite</a></li>
+                <li id="Um"><a href="form.html">survey</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">performance</a>
+                    <div class="dropdown-content">
+                        <a href="Quals.html">Qualifiers</a>
+                        <a href="ro32.html">Round of 32</a>
+                        <a href="ro16.html">Round of 16</a>
+                        <a href="Quarterfinals.html">Quarterfinals</a>
+                        <a href="Semifinals.html">Semifinals</a>
+                        <a href="Finals.html">Finals</a>
+                        <a href="Grandfinals.html">Grandfinals</a>
+                    </div>
+                </li>
+                <li id="HomepageLink"><a href="https://osu.ppy.sh">Osu! Homepage</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Umfrage</h1>
+            <p>hier fragen wir einige sachen ab über OWC und über das Team Südkoreas</p>
+        </article>
+        
+
+        <!--Form-->
+        <div>
+            <h2 id="form-heading">Hier fängt es an</h2>
+            <form action="form.html" method="get" aria-labelledby="form-heading">
+                    <!--about you-->
+                    <fieldset>
+                        <legend id="contact">Über dich</legend>
+                        <label for="oid">Osu ID</label>
+                        <input id="oid" type="number" placeholder="z.B. 12965718" required>
+                        <label for="oName">Osu Benutzername</label>
+                        <input id="oName" type="text" placeholder="z.B. Peppy" required pattern="[a-z,A-Z]">
+                        <label for="osrank">Osu Rang</label>
+                        <input id="osrank" type="number" placeholder="optional">
+                    </fieldset>
+                    <!--OWC Rating-->
+                    <fieldset>
+                        <legend>Wie hat dir OWC 2023 gefallen? (von einer Skala von 1 bis 5)</legend>
+                        
+                        <label for="1">1</label>
+                        <input type="radio" name="points" id="1">
+        
+                        <label for="2">2</label>
+                        <input type="radio" name="points" id="2">
+        
+                        <label for="3">3</label>
+                        <input type="radio" name="points" id="3">
+        
+                        <label for="4">4</label>
+                        <input type="radio" name="points" id="4">
+        
+                        <label for="5">5</label>
+                        <input type="radio" name="points" id="5">
+
+                    </fieldset>
+                    <!--OWC Years-->
+                    <fieldset>
+                        <legend>Welches OWC am besten gefallen?</legend>
+                        
+                        <label for="OWC_2023">OWC 2023</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2023">
+                            
+                        <label for="OWC_2022">OWC 2022</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2022">
+                            
+                        <label for="OWC_2021">OWC 2021</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2021">
+                            
+                        <label for="OWC_2020">OWC 2020</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2020">
+                            
+                        <label for="OWC_2019">OWC 2019</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2019">
+                            
+                        <label for="OWC_2018">OWC 2018</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2018">
+                            
+                        <label for="OWC_2017">OWC 2017</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2017">
+                            
+                        <label for="OWC_2016">OWC 2016</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2016">
+                            
+                        <label for="OWC_2015">OWC 2015</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2015">
+                            
+                        <label for="OWC_2013">OWC 2013</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2013">
+
+                        <label for="OWC_2014">OWC 2014</label>
+                        <input type="checkbox" name="OWCY" id="OWC_2014">
+
+                        <label for="OWC_#3">OWC #3</label>
+                        <input type="checkbox" name="OWCY" id="OWC_#3">
+
+                        <label for="OWC_#2">OWC #2</label>
+                        <input type="checkbox" name="OWCY" id="OWC_#2">
+
+                        <label for="OWC_#1">OWC #1</label>
+                        <input type="checkbox" name="OWCY" id="OWC_#1">
+        
+                    </fieldset>
+                    <!--Fav Spieler-->
+                    <fieldset aria-labelledby="LieblingsSpieler">
+                        <legend id="LieblingsSpieler">Wer ist dein lieblings Mitglied im Südoreanischen Team?</legend>
+                        <label for="Spieler">Ich mochte den Spieler:</label>
+                        <select id="Spieler" name="player">
+                            <option value="ft">FlyingTuna</option>
+                            <option value="kr">	[Karcher]</option>
+                            <option value="whp">worst hr player</option>
+                            <option value="Re">-Restia</option>
+                            <option value="AK">Amamya Kokoro</option>
+                            <option value="Ag">Allegrissimo	</option>
+                            <option value="st">_sPekTrE	</option>
+                            <option value="Pr">	Peresia</option>
+                        </select>
+                    </fieldset>
+                    <!--OWC Meinung-->
+                    <fieldset>
+                        <legend>Bester OWC Korea moment</legend>
+                        <label for="message">Bester OWC Korea moment</label>
+                        <textarea id="message"></textarea>
+                    </fieldset>
+
+                    
+            </form>
+            <input type="submit" value="Abschicken">
+            <input type="reset">
+        </div>
+
+    </body>
+</html>
